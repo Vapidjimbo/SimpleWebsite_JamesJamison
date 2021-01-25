@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    box-shadow:  8px 8px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow:  8px 8px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:  8px 8px 11px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div {
+    padding: 3em;
+    margin: 1em;
+    font-size: large;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 8px 8px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow:  8px 8px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:  8px 8px 11px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes wobble {
+    0%   {transform: rotate(5deg);}
+    25%  {transform:  rotate(-5deg);}
+    50%  {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+div:hover {
+    animation-name: wobble;
+    animation-duration: .5s;
+}
+
+footer {
+    margin-top: 30em;
+    background-color: rgb(241, 241, 241);
+}
+
+@media only screen and (max-width: 577px) {
+    section {
+        flex-direction: column;
+    }
+  }
+
